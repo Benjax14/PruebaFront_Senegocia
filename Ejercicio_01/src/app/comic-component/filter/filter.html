@@ -1,0 +1,6 @@
+<select *ngIf="source=='Comic'" (change)="onFilterChange($event)">
+    <option *ngFor="let comic of data" [value]="comic.title">{{comic.title}}</option>
+</select>
+<select *ngIf="source=='Character'" (change)="onFilterChangeCharacter($event)">
+    <option *ngFor="let character of dataCharacter" [value]="character.name">{{character.name}}</option>
+</select>

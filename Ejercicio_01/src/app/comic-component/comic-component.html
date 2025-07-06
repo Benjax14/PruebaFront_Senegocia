@@ -1,0 +1,34 @@
+<table>
+    <tr>
+        <th>Comics</th>
+        <th>Personajes</th>
+    </tr>
+    <tr>
+        <td>
+            <div *ngIf="isLoading" class="loading-spinner"></div>
+            <app-filter *ngIf="!isLoading" [data]="comics" [source]="'Comic'" (filterChange)="onFilterChangeComic($event)"></app-filter>
+        </td>
+        <td>
+            <div *ngIf="isLoading" class="loading-spinner"></div>
+            <app-filter *ngIf="!isLoading" [dataCharacter]="characters" [source]="'Character'" (filterChangeCharacter)="onFilterChangeCharacter($event)"></app-filter>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div *ngIf="isLoading" class="loading-spinner"></div>
+            <div *ngFor="let comic of filteredComics" class="card">
+                <img [src]="comic.thumbnail.path + '.' + comic.thumbnail.extension" width="150" alt="Comic"
+                    loading="lazy">
+                <h3>{{ comic.title }}</h3>
+            </div>
+        </td>
+        <td>
+            <div *ngIf="isLoading" class="loading-spinner"></div>
+            <div *ngFor="let character of filteredCharacters" class="card">
+                    <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" width="150"
+                        alt="Character" loading="lazy">
+                    <h3>{{ character.name }}</h3>
+            </div>
+        </td>
+    </tr>
+</table>

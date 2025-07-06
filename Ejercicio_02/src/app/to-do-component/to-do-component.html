@@ -1,0 +1,12 @@
+<div class="container-component">
+    <textarea [(ngModel)]="newTask" placeholder="Ingrese Tarea"></textarea>
+    <button (click)="addTask()">Agregar</button>
+    <ul>
+        <li *ngFor="let task of toDoList" (click)="toggleSuccess(task)" [class.success]="task.success" class="task">
+            {{ task.text }}
+            <span (click)="removeTask(toDoList.indexOf(task))">
+                <img src="/assets/cross.png">
+            </span>
+        </li>
+    </ul>
+</div>
