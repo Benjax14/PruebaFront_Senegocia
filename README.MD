@@ -1,3 +1,25 @@
+# Prueba Técnica Frontend - Senegocia
+
+## Tecnologías utilizadas
+
+- [Angular](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- HTML5 / CSS3
+
+
+## Instalación
+
+1. Clona el repositorio:
+   ```bash
+    git clone https://github.com/Benjax14/PruebaFront_Senegocia.git
+    cd PruebaFront_Senegocia
+    ```
+2. Instala las dependencias:
+    ```bash
+    npm install
+    ```
+Ten en cuenta que tienes que instalar las dependencias para cada ejercicio, dado que son proyectos diferentes.
+
 # Ejercicio 1
 
 Se trata de un proyecto donde se ocupa la API de Marvel
