@@ -1,4 +1,4 @@
-export const enviroment = {
+export const environment = {
     production: false,
     apiURL: 'https://gateway.marvel.com/v1/public',
     apiKey: 'Ingresa tu API Key aquí',

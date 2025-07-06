@@ -7,10 +7,10 @@ Se trata de un proyecto donde se ocupa la API de Marvel
 
 ## Variables de entorno
 
-En el archivo enviroment.ts se encuentra el siguiente esquema:
+En el archivo environment.example.ts tienes que cambiar el nombre a environment.ts, en el cual verás el siguiente esquema:
 
-```enviroment.ts
-export const enviroment = {
+```environment.ts
+export const environment = {
     production: false,
     apiURL: 'https://gateway.marvel.com/v1/public',
     apiKey: 'Ingresa tu API Key aquí',
